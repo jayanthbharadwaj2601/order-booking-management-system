@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #z
+        {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        #container
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+            top: 100px;
+        }
+        .x{
+            border: 3px solid #555;
+            padding: 10px 10px;
+            }
+    </style>
+</head>
+<body>
+    <div id="container" align="center">
+    <form action="homepage.php" method="POST">
+        <h1>Enter Username</h1>
+        <input type="text" name="username" class="x">
+        <h1>Enter Password</h1>
+        <input type="password" name="password" class="x">
+        <br>
+        <br>
+        <input type="submit" name="submit" id="z" value="login">
+    </form>
+    </div>
+</body>
+</html>

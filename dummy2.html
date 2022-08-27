@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="open.php" method="POST">
+        <input type="submit" name="submit" value="open">
+    </form>
+    <form action="close.php" method="POST">
+        <input type="submit" name="submit" value="close">;
+    </form>
+    <form action="execute.php" method="POST">
+        <h2>Select Stock</h2>
+        <select name="stock_name" id="stock1">
+            <option value="#">Select your Option</option>
+            <option value="DBS">DBS</option>
+            <option value="jpmorgan">jpmorgan</option>
+            <option value="morganstanley">morganstanley</option>
+        </select>
+        <h2>Order Type</h2>
+        <select name="market_or_limit" id="m1">
+            <option value="#">select your option</option>
+            <option value="limit">limit</option>
+            <option value="market">market</option>
+        </select>
+        <h2>price</h2>
+        <input type="number" name="price"   class="pid">
+        <h2>Quantity</h2>
+        <input type="number" name="quantity" class="pid">
+        <input type="submit" name="submit" value="executeorder">
+    </form>
+</body>
+</html>

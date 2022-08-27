@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login_button{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+            top: 100px;
+        }
+        h1
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" align="center">
+    <h1>Customer</h1>
+    <form action="login.html" method="POST">
+    <input type="submit" name="login" class="login_button" value="login">
+    </form>
+    <form action="signup.html" method="POST">
+        <input type="submit" name="signup" class="login_button" value="signup">
+    </form>
+    <h1>Admin</h1>
+    <form action="admin_login.html" method="POST">
+        <input type="submit" name="loginhere" class="login_button" value="login">
+    </form>
+    </div>
+</body>
+</html>
